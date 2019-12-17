@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+			background-image: linear-gradient(to right, #fde7a0,#fff);
+			background-size: 150%;
+			animation: begnimation 15s infinite;
+
+		}
+		#big{
+			background-color: #232235;
+			width: 1200px;
+			height: 600px;
+			border-radius: 45px;
+			margin: 4% auto 0;
+		}
+		.left{
+			width: 450px;
+			height: 600px;
+			position: absolute;
+			left: 300px;
+			top: 100px;
+		}
+		#cc{
+			color: #eccd8d;
+		}
+		#logo{
+			width: 200px;
+			position: absolute;
+			left: -10px;
+			top: 100px;
+		}
+		#text1{
+			color: white;
+			position: absolute;
+			top: 300px;
+			left: 15px;
+			font-size: 25px;
+			line-height: 40px;
+		}
+		.right{
+			width: 500px;
+			height: 450px;
+			border-radius: 30px;
+			background-color: #fde7a0;
+			position: absolute;
+			margin:auto;
+			left: 700px;
+			top: 150px;
+		}
+		#in{
+			position: absolute;
+			left: 50px;
+			top: 40px;
+		}
+		#cb{
+			margin: 20px 10px 10px 0;
+		}
+		#in img{
+			margin: 15px 10px 0 0;
+			position: relative;
+			top: 8px;
+		}
+		#else img{
+			margin: 10px 5px 0 0;
+		}
+		#log{
+			width: 150px;
+			height: 30px;
+			margin: 10px 0;
+			padding: 5px;
+			border-radius: 15px;
+			background-color: #ae9775;
+			color: white;
+			display: inline-block;
+			text-align: center;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			position: absolute;
+			left: 100px;
+			top: 290px;
+		}
+		#in p{
+			color: #ae9775;
+			font-size: 14px;
+			font-family: "微软雅黑";
+			position: relative;
+			top: 10px;
+		}
+		#inp{
+			border-radius: 15px;
+			padding: 5px;
+			margin: 5px auto;
+			width: 300px;
+			height: 25px;
+			border:2px solid #eccd8d;
+			outline: none;
+			opacity: 50%;
+		}
+		#else{
+			position: relative;
+			top: 50px;
+			color: #ae9775;
+			font-size: 15px;
+			font-family: "微软雅黑";
+		}
+	</style>
+</head>
+<body>
+	<div id="big">
+		<div class="left">
+			<div>
+				<img id="logo" src="logo.png">
+			</div>
+			<div id="text1">
+				<p><span id="cc">PICK</span>  HE / SHE  <span id="cc">UP</span> !!!</p>
+				<P>2019.404NOTFOUND</P>
+			</div>
+		</div>
+		<div class="right">
+			<div id="in">
+				<div id="name">
+				<p>用户名：</p>
+				<div class="inp">
+					<img src="name.png" width="30px">
+					<input id="inp" type="text" name="name" value="  用户名">
+				</div>
+				</div>
+				<div id="phone">
+					<p>联系方式：</p>
+					<div class="inp">
+						<img src="phone.png" width="30px">
+						<input id="inp" type="text" name="phone" value="  联系方式">
+					</div>
+				</div>
+				<div id="password">
+					<p>密码：</p>
+					<div class="inp">
+						<img src="password.png" width="30px">
+						<input type="password" name="password" id="inp">
+					</div>
+				</div>
+				<input id="cb" type="checkbox" name="autologin" checked="">记住我
+				<div>
+					<button id="log">登录</button>
+				</div>
+				<div id="else">
+					其它登录方式：
+					<a href="#"><img src="weibo.png" width="20px"></a>
+					<a href="#"><img src="wechat.png" width="20px"></a>
+					<a href="#"><img src="qq.png" width="20px"></a>
+					<a href="#"><img src="github.png" width="20px"></a>
+					<a href="#"><img src="twitter.png" width="20px"></a>
+					<a href="#"><img src="alipay.png" width="20px"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
