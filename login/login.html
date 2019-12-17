@@ -3,6 +3,8 @@
 <head>
 	<title>登录</title>
 	<meta charset="utf-8">
+	
+	<script type="text/javascript" src="animate.js"></script>
 	<style type="text/css">
 		*{
 			margin: 0;
@@ -14,11 +16,11 @@
 		body{
 			margin: 0;
 			padding: 0;
-			background-image: url(bgimg.jpg);
+			background-image: url(../banner图片/bgimg.jpg);
 			background-size: 100%;
 		}
 		#big{
-			background-color: #232235;
+			background-color: #0b0d3c;
 			width: 1200px;
 			height: 600px;
 			border-radius: 45px;
@@ -115,9 +117,64 @@
 			font-size: 15px;
 			font-family: "微软雅黑";
 		}
+		.smallnav{
+			position: fixed;
+			right: 0px;
+			top: 250px;
+			z-index: 11;
+			margin-left: 510px;
+			padding-top: 157px;		
+			border-radius: 10px;
+		}
+		.smallnav ul{
+			position: relative;
+			top: -150px;
+			border-color: #ae9775;
+			height: 250px;
+			width: 100px;
+			border-radius: 10px;
+		}
+		.smallnav ul li{
+			position: relative;
+			top: 10px;
+			width: 80px;
+			margin: 10px auto 0;
+			padding: 5px 5px 5px 5px;
+			list-style: none;
+			background-color: #eccd8d;
+			border-radius: 10px;
+			text-align: center;
+		}
+		.smallnav a{
+			color: #fff;
+			font-size: 15px;
+		}
+		.smallnav: :before {
+			content: url(logo.png);
+		}
+		.bottom{
+			position: absolute;
+			right: 0px;
+			bottom: -100px;
+			width: 100%;
+			height: 100px;
+			background-color: #0b0d3c;
+			color: white;
+			text-align: center;
+			opacity: 80%;
+		}
 	</style>
 </head>
 <body>
+	<div class="smallnav">
+		<ul>
+			<li><img src="logo.png" width="50px"></li>
+			<li><a href="#">大赛主页</a></li>
+			<li><a href="#">投票页面</a></li>
+			<li><a href="#">账号登录</a></li>
+			<li><a href="#">我的PICK</a></li>
+		</ul>
+	</div>
 	<div id="big">
 		<div class="left">
 			<div>
@@ -166,6 +223,12 @@
 				</div>
 			</div>
 		</div>
+		<div class="bottom">
+			 地址：河北省石家庄市南二环东路20号河北师大新校区理科群 <br />
+			联系电话：   88888888&nbsp;&nbsp;&nbsp;&nbsp;8888888<br />
+			版权所有：河北师范大学软件学院<br />
+		</div>
 	</div>
+	<script type="text/javascript" src="loginsp.js"></script>
 </body>
 </html>
