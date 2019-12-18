@@ -4,8 +4,9 @@
 }
 .box{
 	width:100%;
-	background:url(bgimg.jpg) center top repeat-y;
+	background:url(bgimg.jpg) center top;
 	background-size: 100%;
+	background-repeat:  repeat-y;
 }
 .header{
 	width: 100%
@@ -58,6 +59,15 @@
 #right>img{
 	width:50px;
 }
+.smallnav{
+	position: fixed;
+	right: 0px;
+	top: 250px;
+	z-index: 11;
+	margin-left: 510px;
+	padding-top: 157px;		
+	border-radius: 10px;
+}
 .smallnav ul{
 	position: relative;
 	top: -150px;
@@ -84,6 +94,32 @@
 .smallnav: :before {
 	content: url(logo.png);
 }
+.search_box{
+	position: fixed;
+	float: left;
+	left: 280px;
+	width:35%;
+	display: flex;
+	margin: 5px auto;
+	border:1px solid #eccd8d;
+	border-radius: 0.5; 
+}
+.search_box input{
+	float: left;
+	flex:4;
+	height:30px;
+	outline:none;
+	box-sizing: border-box;
+}
+.search_box button{
+	float: right;
+	flex:1;
+	height: 30px;
+	background-color: #eccd8d;
+	color: white;
+	outline: none;
+}
+
 #navBox{
 	/*border: 2px solid;*/
 	position: fixed;
@@ -130,6 +166,10 @@
 	font-size: 20px;
 	top: 14px;
 	right: 150px;
+}
+#nav-p a{
+	text-decoration: none;
+	color:white;
 }
 #nav-p li{
 	display: inline-block;
