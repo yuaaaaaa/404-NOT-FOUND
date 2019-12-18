@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>简介</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background-image:url("banner/bgimg.jpg");
+			background-size: 100%;
+		}
+		.box{
+			height: 650px;
+			width: 1100px;
+			margin: 50px auto;
+			border-width: 1px;
+			border-style: solid;
+			border-color:#ae9775;
+			border-radius: 45px;
+			position: relative;
+			text-align: center;
+			background-color: #232235;
+
+		}
+		img{
+			height:400px;
+			width: 400px;
+			border-radius: 30px;
+		}
+		.img{
+			height: 400px;
+			width: 400px;
+			position: absolute;
+			left: 75px;
+			top: 100px;
+		}
+		.content{
+			height: 500px;
+			width: 500px;
+			background-color: #eccd8d;
+			border-radius: 30px;
+			position: absolute;
+			right: 50px;
+			top: 50px;
+		}
+		.base{
+			height:200px;
+			width: 500px;
+			position: absolute;
+			left: 5px;
+			top: 0px;
+		}
+
+		.base p{
+			height: 40px;
+			width: 490px;
+			text-align: left;
+			line-height: 50px;
+			/*border-bottom-width: 1px;*/
+			border-bottom-style: dotted;
+			border-bottom-color: #ccc;
+			color: #232235;
+		}
+		.button{
+			width: 1000px;
+			height: 60px;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			line-height: 60px;
+			text-align: center;
+		}
+		#button1{
+			width: 100px;
+			height:30px;
+			background-color: #5a4b5b; 
+			color:white;
+			margin: 0px 100px;
+			border-style: none;
+			border-radius: 45px;
+			outline: none;
+		}
+		#button2{
+			width: 100px;
+			height: 30px;
+			margin: 0px 50px;
+			background-color: #5a4b5b; 
+			border-style: none;
+			color:white;
+			border-radius: 45px;
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="box" id="box">
+		<div class="img" id="img"> <img src="banner/1.jpg"></div>
+		<div class="content" id="content">
+			<div class="base" id="base">
+				<p>姓名:张杰&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国籍:中国</p> 
+				<!-- <p>国籍:中国</p>  -->
+				<p>名族:汉族&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;职业:歌手</p>             
+				<!-- <p></p>  -->
+				<p>出生日期:1982年12月20日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;毕业院校:四川师范大学	</p> 
+				<!-- <p></p>	 -->
+				<p>开设课程:</p>		       
+			</div>
+		</div>
+		<div class="button" id="button">
+			<button id="button1">投票</button>
+			<button id="button2">规则</button>
+		</div>
+	</div>
+<script type="text/javascript">
+	var button1 = document.getElementById('button1');
+	var button2 = document.getElementById('button2');
+	button1.onclick=function() {
+		  var p = window.confirm("是否要投票");
+		  if(p==true){
+		  	alert("投票成功!")
+		  }
+	}
+	button2.onclick = function(){
+		window.alert("微博投票上线初期将开放给部分账号进行公测，未登录和未绑定手机号的用户不能参与投票，请先完成账号登录和手机号绑定。每个用户只能投给一个选项，且只能投一票。投票结束前，点击投票card上的任一选项，可以选择取消投票，取消后可以进行重投。");
+	}
+
+</script>
+</body>
+</html>
