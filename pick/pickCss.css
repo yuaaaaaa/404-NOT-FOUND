@@ -1,9 +1,8 @@
 *{
 	padding: 0;
 	margin: 0;
-	/*background-image:url("/Users/chenyuqing/404-NOT-FOUND/banner图片/5.jpg");  */
-	background-size: 100%;
-	/*background: #161820;*/
+	
+	
 }
 a{
 	text-decoration: none;
@@ -14,6 +13,23 @@ ul{
 }
 li{
 	list-style: none;
+}
+body{
+	
+	background: url("bgimg.jpg") fixed;
+    background-image: url("bgimg.jpg");
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: 100%;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    background-size: 100%;
+    background-repeat: no-repeat;
+	/*background: black;*/
 }
 
 #navBox{
@@ -50,6 +66,7 @@ li{
 	height: 50px;
 	float: left;
 	left: 150px;
+
 }
 #nav-img img{
 	width: 60px;
@@ -76,6 +93,7 @@ li{
 	/*border: 2px solid;*/
 	position: relative;
 	top: 50px;
+
 }
 #bigImg{
 	overflow: hidden;
@@ -83,7 +101,12 @@ li{
 	/*border: 2px solid;*/
 	margin: 0 auto;
 	width: 1200px;
-	height: 680px;
+	height: 640px;
+	border: 2px solid #ae9775;
+}
+#bigImg img{
+	width: 1200px;
+	height: 640px;
 }
 #newsBox{
 	border: 2px solid;
@@ -91,7 +114,8 @@ li{
 	width: 1200px;
 	height: 300px;
 	margin: 0 auto;
-	margin-top: 40px;
+	margin-top: 60px;
+	background-color: #232235;
 	/*left: 120px;*/
 
 
@@ -107,6 +131,7 @@ li{
 #tipBox{
 	/*border: 2px solid;*/
 	position: relative;
+
 }
 #tip{
 	margin: 0 auto;
@@ -123,6 +148,7 @@ li{
 
 }
 #pickBox{
+	background-color: #232235;
 	margin-top: 10px;
 	border: 2px solid;
 	position: relative;
@@ -160,6 +186,7 @@ li{
 	margin: 0 auto;
 	width: 20px;
 	margin-top: 40px;
+	background-image: url(83d474b1204e9187bd07c6aa167880c474551b5058c7-UoI7eO_fw658.png);
 }
 #bottomBox{
 	border: 2px solid;
