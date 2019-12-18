@@ -2,6 +2,13 @@
 	padding: 0;
 	margin: 0;
 }
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
 body{
 	background-image:url("banner/bgimg.jpg");
 	background-size: 100%;
