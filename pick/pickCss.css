@@ -17,7 +17,7 @@ li{
 body{
 	
 	background: url("bgimg.jpg") fixed;
-    background-image: url("bgimg.jpg");
+    background-image: url("../banner/bgimg.png");
     background-position-x: initial;
     background-position-y: initial;
     background-size: 100%;
@@ -135,7 +135,7 @@ body{
 }
 #tip{
 	margin: 0 auto;
-	margin-top: 10px;
+	margin-top: 20px;
 	border: 2px solid;
 	width: 1400px;
 	height: 40px;
@@ -149,44 +149,78 @@ body{
 }
 #pickBox{
 	background-color: #232235;
-	margin-top: 10px;
-	border: 2px solid;
+	margin-top: 20px;
 	position: relative;
 	height: 3000px;
 	width: 1200px;
-	left: 120px;
+	left: 140px;
 }
 #pick{
-	margin: 0 auto;
+	position: relative;
+	top: 10px;
+	left: 1.4%;
+	margin: 20px 5px auto;
 	width: 280px;
-	height: 300px;
+	height: 400px;
 	float: left;
-	border: 2px solid;
+	background-image: url(kuang.png);
+	background-size: 100%;
+	/*border: 2px solid;*/
 }
 #pickImg{
 	margin: 0 auto;
-	margin-top: 10px;
-	width: 100px;
-	height: 100px;
-	border: 1px solid;
+	margin-top: 40px;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	/*border: 1px solid;*/
+	border: 2px solid #ae9775;
+	box-shadow: rgba(0,0,0,0.5) 2px 3px 2px;
+}
+#pickImg img{
+	width: 120px;
 }
 #pickName{
 	margin: 0 auto;
-	width: 50px;
+	width: 120px;
+	height: 30px;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 25px;
+	color: #ae9775;
+	font-size: 20px;
+	line-height: 30px;
+	border-radius: 10px;
 }
 #pickNumber{
 	margin: 0 auto;
 	width: 80px;
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 30px;
+	color: #ae9775;
+	opacity: 80%;
 }
 #pickButton{
 	margin: 0 auto;
-	width: 20px;
+	width: 80px;
+	height: 30px;
 	margin-top: 40px;
-	background-image: url(83d474b1204e9187bd07c6aa167880c474551b5058c7-UoI7eO_fw658.png);
+}
+#pickButton input{
+	width: 80px;
+	height: 30px;
+	border-radius: 15px;
+	background-color: #ae9775;
+	color: #685a46;
+	font-size: 18px;
+	display: block;
+	border: none;
+	outline: none;
+	font-family: "方正粗宋简体";
+
 }
 #bottomBox{
 	border: 2px solid;
