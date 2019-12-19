@@ -15,8 +15,16 @@
 				<div id="nav-img"><img src="logo.png"></div>
 				<!-- 搜索 -->
 				<div class="search_box" id="search_box">
-					<input type="text" placeholder="请输入...." value="" class="W_input" name="search">
+					<input id="input" type="text" placeholder="请输入...." value="" class="W_input" name="search">
 					<button>搜索</button>
+					<div id="nameList" class="content">
+						<p>name1</p>
+						<p>name2</p>
+						<p>name3</p>
+						<p>name4</p>
+						<p>name5</p>
+						<p>name6</p>
+					</div>
 				</div>
 				<div id="nav-p">
 					<ul>
@@ -34,10 +42,10 @@
 	<!-- banner主界面-->
 	<div class="banner" id="banner">
 		<div class="slides_show" id="slides_show">
-			<div class="slide"><img src="2.jpg"></div>
-			<div class="slide"><img src="1.jpg"></div>
-			<div class="slide"><img src="2.jpg"></div>
-			<div class="slide"><img src="1.jpg"></div>
+			<div class="slide"><img id="img" src="2.jpg"></div>
+			<div class="slide"><img id="img" src="1.jpg"></div>
+			<div class="slide"><img id="img" src="2.jpg"></div>
+			<div class="slide"><img id="img" src="1.jpg"></div>
 		</div>
 		<span id = "left"><img src="左.png"></span>
 		<span id = "right"><img src="右.png"></span>
@@ -60,6 +68,8 @@
 </div>
 <script type="text/javascript" src="animate.js"></script>
 <script type="text/javascript" src="banner.js"></script>
+<script type="text/javascript" src="top.js"></script>
+
 </body>
 
 </html>

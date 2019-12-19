@@ -2,6 +2,7 @@ var banner = document.getElementById('banner');
 var left = document.getElementById('left');
 var right = document.getElementById('right');
 var slides_show = document.getElementById('slides_show');
+var img = document.getElementById('img');
 var i = 1;
 var isMoving = false;
 var timer;
@@ -39,6 +40,7 @@ banner.onmouseover = function() {
 	animate(left,{opacity:50});
 	animate(right,{opacity:50});
 	clearInterval(timer);
+
 }
 //鼠标划出
 banner.onmouseout = function(){
