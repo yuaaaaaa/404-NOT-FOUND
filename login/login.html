@@ -16,8 +16,11 @@
 		body{
 			margin: 0;
 			padding: 0;
-			background-image: url(../banner图片/bgimg.jpg);
+			background-image: url(../banner/bgimg.png);
 			background-size: 100%;
+			background-repeat-x: no-repeat;
+    		background-repeat-y: no-repeat;
+    		background-attachment: fixed;
 		}
 		#big{
 			background-color: #0b0d3c;
@@ -155,24 +158,75 @@
 		.bottom{
 			position: absolute;
 			right: 0px;
-			bottom: -100px;
+			bottom: -150px;
 			width: 100%;
-			height: 100px;
-			background-color: #0b0d3c;
-			color: white;
+			height: 150px;
+			background-color: #000;
+			color: #fff;
 			text-align: center;
 			opacity: 80%;
 		}
+		#fl li{
+			display: inline-block;
+			width: 200px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+		}
+		#fl li a{
+			color: #fff;
+		}
+		#navBox{
+			position: fixed;
+			background: #000;
+			width: 100%;
+			height: 50px;
+			top: 0px;
+			left: 0px;
+		}
+		#nav-img{
+			margin: 0 auto;
+			position: relative;
+			width: 60px;
+			height: 50px;
+			float: left;
+			left: 150px;
+
+		}
+		#nav-img img{
+			height: 50px;
+		}
+		#nav-p{
+			margin: 0 auto;
+			position: relative;
+			float: right;
+			font-size: 20px;
+			top: 14px;
+			right: 150px;
+			color: #eccd8d;
+		}
+		#nav-p li{
+			display: inline-block;
+			width: 80px;
+			text-align: center;
+		}
+		#nav-p li a{
+			color: #eccd8d;
+		}
+		#nav-p li:hover a{
+			color: #fff;
+		}
 	</style>
 </head>
-<body>
+
+<body>	
 	<div class="smallnav">
 		<ul>
-			<li><img src="logo.png" width="50px"></li>
-			<li><a href="#">大赛主页</a></li>
-			<li><a href="#">投票页面</a></li>
-			<li><a href="#">账号登录</a></li>
-			<li><a href="#">我的PICK</a></li>
+			<li class="nav0 current_page"><img src="logo.png" width="50px"></li>
+			<li class="nav1"><a href="#">大赛主页</a></li>
+			<li class="nav2"><a href="#">投票页面</a></li>
+			<li class="nav3"><a href="#">账号登录</a></li>
+			<li class="nav4"><a href="#">我的PICK</a></li>
 		</ul>
 	</div>
 	<div id="big">
@@ -224,10 +278,33 @@
 			</div>
 		</div>
 		<div class="bottom">
-			 地址：河北省石家庄市南二环东路20号河北师大新校区理科群 <br />
+			<div id="footer">
+				<ul id="fl">
+					<li><a href="#">大赛主页</a></li>
+					<li><a href="#">投票页面</a></li>
+					<li><a href="#">账号登录</a></li>
+					<li><a href="#">我的PICK</a></li>
+				</ul>
+			</div>
+			地址：河北省石家庄市南二环东路20号河北师大新校区理科群 <br />
 			联系电话：   88888888&nbsp;&nbsp;&nbsp;&nbsp;8888888<br />
 			版权所有：河北师范大学软件学院<br />
 		</div>
+		<div id="navBox">
+		<div id="nav">
+		<div id="navColor"></div>
+		<div id="nav-img"><img src="logo.png"></div>
+		<div id="nav-p">
+			<ul>
+				<li><span><a href="">首页</a></span></li>
+				<li><span><a href="">榜单</a></li>
+				<li><span><a href="">详情</a></li>
+				<li><span><a href="">注册</a></li>
+				|
+				<li><span><a href="">登录</a></div></span></li>
+			</ul>
+		</ul>
+	</div>
 	</div>
 	<script type="text/javascript" src="loginsp.js"></script>
 </body>
