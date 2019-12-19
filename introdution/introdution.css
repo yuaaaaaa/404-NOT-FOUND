@@ -7,12 +7,50 @@ ul li{
 }
 a{
 	text-decoration: none;
-	color: white;
 }
 body{
 	background-image:url("banner/bgimg.jpg");
 	background-size: 100%;
 	position: relative;
+}
+.smallnav{
+	position: fixed;
+	right: 0px;
+	top: 250px;
+	z-index: 11px;
+	margin-left: 510px;
+	padding-top: 157px;		
+	border-radius: 10px;
+}
+.smallnav ul{
+	position: relative;
+	top: -150px;
+	border-color: #ae9775;
+	height: 250px;
+	width: 100px;
+	border-radius: 10px;
+}
+#img{
+	width: 50px;
+	height: 50px;
+}
+.smallnav ul li{
+	position: relative;
+	top: 10px;
+	width: 80px;
+	margin: 10px auto 0;
+	padding: 5px 5px 5px 5px;
+	list-style: none;
+	background-color: #eccd8d;
+	border-radius: 10px;
+	text-align: center;
+}
+.smallnav a{
+	color: #fff;
+	font-size: 15px;
+}
+.smallnav: :before {
+	content: url(banner/logo.png);
 }
 .box{
 	height: 650px;
@@ -66,6 +104,19 @@ img{
 	border-bottom-color: #ccc;
 	color: #232235;
 }
+.detailed{
+	height: 300px;
+	width: 500px;
+	position: absolute;
+	left: 5px;
+	top:170px;
+}
+.detailed p{
+	text-align: left;
+	line-height: 25px;
+	color: #232235;
+}
+
 .button{
 	width: 1000px;
 	height: 60px;
@@ -153,6 +204,10 @@ img{
 	font-size: 20px;
 	top: 14px;
 	right: 150px;
+
+}
+#nav-p a{
+	color: white;
 }
 #nav-p li{
 	display: inline-block;
