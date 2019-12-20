@@ -208,3 +208,14 @@ body{
 #nav-p li:hover a{
 	color: #eccd8d;
 }
+.bottom{
+			position: absolute;
+			right: 0px;
+			bottom: -150px;
+			width: 100%;
+			height: 150px;
+			background-color: #000;
+			color: #fff;
+			text-align: center;
+			opacity: 80%;
+		}
