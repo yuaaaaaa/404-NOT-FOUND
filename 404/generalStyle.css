@@ -34,7 +34,9 @@ body{
   	-moz-transition: -moz-transform 1s;
   	-o-transition: -o-transform 1s;
 	transition: transform 1s;
+	/*放大时间*/
 }
+/*放大倍数*/
 .banner #img:hover{
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
