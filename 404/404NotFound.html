@@ -4,10 +4,10 @@
 	<title>404-NOT-FOUND</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="generalStyle.css">
+	<script type="text/javascript" src="jquery-1.8.2.js"></script>
 </head>
 <body>
 <div class="box">
-	
 	<!-- banner主界面-->
 	<div class="banner" id="banner">
 		<div class="slides_show" id="slides_show">
@@ -46,16 +46,11 @@
 				<div id="nav-img"><img src="logo.png"></div>
 				<!-- 搜索 -->
 				<div class="search_box" id="search_box">
-					<input id="input" type="text" placeholder="请输入...." value="" class="W_input" name="search">
-					<button>搜索</button>
-					<div id="nameList" class="content">
-						<p>name1</p>
-						<p>name2</p>
-						<p>name3</p>
-						<p>name4</p>
-						<p>name5</p>
-						<p>name6</p>
-					</div>
+					<input id="txt" type="text" placeholder="请输入姓名...." value="" class="W_input" name="search">
+					<button id="btn">搜索</button>
+					<ul id=list" class="content">
+					
+					</ul>
 				</div>
 				<div id="nav-p">
 					<ul>
@@ -70,8 +65,6 @@
 			</div>
 		</div>
 	</div>
-	
-
 <script type="text/javascript" src="animate.js"></script>
 <script type="text/javascript" src="banner.js"></script>
 <script type="text/javascript" src="top.js"></script>
