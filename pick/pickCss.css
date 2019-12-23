@@ -244,7 +244,41 @@ body{
 #fl li a{
 	color: #fff;
 }
-
+.smallnav{
+	position: fixed;
+	right: 0px;
+	top: 250px;
+	z-index: 11;
+	margin-left: 510px;
+	padding-top: 157px;		
+	border-radius: 10px;
+}
+.smallnav ul{
+	position: relative;
+	top: -150px;
+	border-color: #ae9775;
+	height: 250px;
+	width: 100px;
+	border-radius: 10px;
+}
+.smallnav ul li{
+	position: relative;
+	top: 10px;
+	width: 80px;
+	margin: 10px auto 0;
+	padding: 5px 5px 5px 5px;
+	list-style: none;
+	background-color: #eccd8d;
+	border-radius: 10px;
+	text-align: center;
+}
+.smallnav a{
+	color: #fff;
+	font-size: 15px;
+}
+.smallnav: :before {
+	content: url(logo.png);
+}
 
 
 
