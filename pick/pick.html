@@ -32,13 +32,27 @@
 <div class="pickBox">
 	<div class="pick">
 		<div class="pickImg">
-			<img src="tx1.jpg">
+			<img src="zz.jpg" >
 		</div>
 		<div class="pickName">
-			<p class="pickNameP">name</p>
+			<a class="pickNameP" href="../introdution/雪梨大作业.html" >陈润资</a>
 		</div>
 		<div class="pickNumber">
-			<p class="pickNumberP">1000000</p>
+			<p class="pickNumberP">984515</p>
+		</div>
+		<div class="pickButton">
+			<input type="button" name="投票" value="投票" class="pickNumberInput">
+		</div>
+	</div>
+	<div class="pick">
+		<div class="pickImg">
+			<img src="ywb.jpg">
+		</div>
+		<div class="pickName">
+			<a class="pickNameP" href="#">杨伟斌</a>
+		</div>
+		<div class="pickNumber">
+			<p class="pickNumberP">951245</p>
 		</div>
 		<div class="pickButton">
 			<input type="button" name="投票" value="投票" class="pickNumberInput">
@@ -49,10 +63,10 @@
 			<img src="tx1.jpg">
 		</div>
 		<div class="pickName">
-			<p class="pickNameP">name</p>
+			<a class="pickNameP" href="#">陈润资</a>
 		</div>
 		<div class="pickNumber">
-			<p class="pickNumberP">1000000</p>
+			<p class="pickNumberP">913412</p>
 		</div>
 		<div class="pickButton">
 			<input type="button" name="投票" value="投票" class="pickNumberInput">
@@ -63,10 +77,24 @@
 			<img src="tx1.jpg">
 		</div>
 		<div class="pickName">
-			<p class="pickNameP">name</p>
+			<a class="pickNameP" href="#">陈润资</a>
 		</div>
 		<div class="pickNumber">
-			<p class="pickNumberP">1000000</p>
+			<p class="pickNumberP">873413</p>
+		</div>
+		<div class="pickButton">
+			<input type="button" name="投票" value="投票" class="pickNumberInput">
+		</div>
+	</div>
+	<div class="pick">
+		<div class="pickImg">
+			<img src="cyq.jpg">
+		</div>
+		<div class="pickName">
+			<a class="pickNameP" href="#">陈雨晴</a>
+		</div>
+		<div class="pickNumber">
+			<p class="pickNumberP">853411</p>
 		</div>
 		<div class="pickButton">
 			<input type="button" name="投票" value="投票" class="pickNumberInput">
@@ -77,10 +105,10 @@
 			<img src="tx1.jpg">
 		</div>
 		<div class="pickName">
-			<p class="pickNameP">name</p>
+			<a class="pickNameP" href="#">薛子玥</a>
 		</div>
 		<div class="pickNumber">
-			<p class="pickNumberP">1000000</p>
+			<p class="pickNumberP">849901</p>
 		</div>
 		<div class="pickButton">
 			<input type="button" name="投票" value="投票" class="pickNumberInput">
@@ -88,13 +116,13 @@
 	</div>
 	<div class="pick">
 		<div class="pickImg">
-			<img src="tx1.jpg">
+			<img src="lhh.jpg">
 		</div>
 		<div class="pickName">
-			<p class="pickNameP">name</p>
+			<a class="pickNameP" href="#">刘蕙菡</a>
 		</div>
 		<div class="pickNumber">
-			<p class="pickNumberP">1000000</p>
+			<p class="pickNumberP">839111</p>
 		</div>
 		<div class="pickButton">
 			<input type="button" name="投票" value="投票" class="pickNumberInput">
@@ -102,41 +130,13 @@
 	</div>
 	<div class="pick">
 		<div class="pickImg">
-			<img src="tx1.jpg">
+			<img src="lx.jpg">
 		</div>
 		<div class="pickName">
-			<p class="pickNameP">name</p>
+			<a class="pickNameP" href="#">李星</a>
 		</div>
 		<div class="pickNumber">
-			<p class="pickNumberP">1000000</p>
-		</div>
-		<div class="pickButton">
-			<input type="button" name="投票" value="投票" class="pickNumberInput">
-		</div>
-	</div>
-	<div class="pick">
-		<div class="pickImg">
-			<img src="tx1.jpg">
-		</div>
-		<div class="pickName">
-			<p class="pickNameP">name</p>
-		</div>
-		<div class="pickNumber">
-			<p class="pickNumberP">1000000</p>
-		</div>
-		<div class="pickButton">
-			<input type="button" name="投票" value="投票" class="pickNumberInput">
-		</div>
-	</div>
-	<div class="pick">
-		<div class="pickImg">
-			<img src="tx1.jpg">
-		</div>
-		<div class="pickName">
-			<p class="pickNameP">name</p>
-		</div>
-		<div class="pickNumber">
-			<p class="pickNumberP">1000000</p>
+			<p class="pickNumberP">829043</p>
 		</div>
 		<div class="pickButton">
 			<input type="button" name="投票" value="投票" class="pickNumberInput">
@@ -193,22 +193,25 @@
 	var pickNames = document.getElementsByClassName ('pickNameP');
 	var pickNumbers = document.getElementsByClassName('pickNumberP');
 	var i = 0;
+	var num = 3;
 	for(i = 0;i < picks.length;++i){
 		abc(i);
 		function abc(i){
 			picks[i].onclick = function(){
-				alert(i);
+				
 				var name = pickNames[i].innerHTML;
 				var number = parseInt(pickNumbers[i].innerHTML);
 				var flag = confirm("你确定要为" + name +"投票吗?");
-				if(flag === true){
+				if(flag === true && num > 0){
 					pickNumbers[i].innerHTML = number + 1 + "";
-					alert("投票成功！")
+					num --;
+					alert("投票成功！" + "你还有" + num + "次投票机会！")
+				}else if(num == 0){
+					alert("抱歉你今天的投票次数已用完！");
 				}
 			}
 		}
 	}
-	
 </script>
 </html>
 

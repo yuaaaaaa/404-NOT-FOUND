@@ -195,6 +195,9 @@ body{
 	line-height: 30px;
 	border-radius: 10px;
 }
+.pickNameP{
+	color: #eccd8d;
+}
 .pickNumber{
 	margin: 0 auto;
 	width: 80px;
