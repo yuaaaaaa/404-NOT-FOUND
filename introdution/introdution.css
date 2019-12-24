@@ -195,6 +195,16 @@ body{
 	text-align: center;
 	opacity: 80%;
 }
+#fl li{
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	}
+#fl li a{
+	color: #fff;
+}
 #navBox{
 	/*border: 2px solid;*/
 	position: fixed;

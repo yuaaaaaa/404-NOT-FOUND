@@ -108,28 +108,10 @@ body{
 	width: 1200px;
 	height: 640px;
 }
-#newsBox{
-	border: 2px solid;
-	position: relative;
-	width: 1200px;
-	height: 300px;
-	margin: 0 auto;
-	margin-top: 60px;
-	background-color: #232235;
-	/*left: 120px;*/
 
-
-}
-#news{
-	position: relative;
-	border: 2px solid;
-	float: left;
-	width: 380px;
-	height: 300px;
-	
-}
 #tipBox{
 	/*border: 2px solid;*/
+	margin-top: 70px;
 	position: relative;
 
 }
@@ -147,15 +129,15 @@ body{
 	border-radius:15px;
 
 }
-#pickBox{
+.pickBox{
 	background-color: #232235;
 	margin-top: 20px;
 	position: relative;
-	height: 3000px;
+	height: 900px;
 	width: 1200px;
 	left: 140px;
 }
-#pick{
+.pick{
 	position: relative;
 	top: 10px;
 	left: 1.4%;
@@ -167,7 +149,7 @@ body{
 	background-size: 100%;
 	/*border: 2px solid;*/
 }
-#pickImg{
+.pickImg{
 	margin: 0 auto;
 	margin-top: 40px;
 	width: 120px;
@@ -181,10 +163,10 @@ body{
 	border: 2px solid #ae9775;
 	box-shadow: rgba(0,0,0,0.5) 2px 3px 2px;
 }
-#pickImg img{
+.pickImg img{
 	width: 120px;
 }
-#pickName{
+.pickName{
 	margin: 0 auto;
 	width: 120px;
 	height: 30px;
@@ -195,7 +177,10 @@ body{
 	line-height: 30px;
 	border-radius: 10px;
 }
-#pickNumber{
+.pickNameP{
+	color: #eccd8d;
+}
+.pickNumber{
 	margin: 0 auto;
 	width: 80px;
 	text-align: center;
@@ -203,13 +188,13 @@ body{
 	color: #ae9775;
 	opacity: 80%;
 }
-#pickButton{
+.pickButton{
 	margin: 0 auto;
 	width: 80px;
 	height: 30px;
 	margin-top: 40px;
 }
-#pickButton input{
+.pickButton input{
 	width: 80px;
 	height: 30px;
 	border-radius: 15px;
@@ -222,12 +207,63 @@ body{
 	font-family: "方正粗宋简体";
 
 }
-#bottomBox{
-	border: 2px solid;
+.bottom{
+	position: relative;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 150px;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	opacity: 80%;
 }
 
-
-
+#fl li{
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+#fl li a{
+	color: #fff;
+}
+.smallnav{
+	position: fixed;
+	right: 0px;
+	top: 250px;
+	z-index: 11;
+	margin-left: 510px;
+	padding-top: 157px;		
+	border-radius: 10px;
+}
+.smallnav ul{
+	position: relative;
+	top: -150px;
+	border-color: #ae9775;
+	height: 250px;
+	width: 100px;
+	border-radius: 10px;
+}
+.smallnav ul li{
+	position: relative;
+	top: 10px;
+	width: 80px;
+	margin: 10px auto 0;
+	padding: 5px 5px 5px 5px;
+	list-style: none;
+	background-color: #eccd8d;
+	border-radius: 10px;
+	text-align: center;
+}
+.smallnav a{
+	color: #fff;
+	font-size: 15px;
+}
+.smallnav: :before {
+	content: url(logo.png);
+}
 
 
 
