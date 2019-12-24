@@ -4,7 +4,7 @@
 	<title>404-NOT-FOUND</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="404/generalStyle.css">
-	
+	<link rel="stylesheet" type="text/css" href="404/search.css">
 </head>
 <body>
 <div class="box">
@@ -16,8 +16,8 @@
 			<div class="slide"><img id="img" src="404/2.jpg"></div>
 			<div class="slide"><img id="img" src="404/1.jpg"></div>
 		</div>
-		<span id = "left"><img src="左.png"></span>
-		<span id = "right"><img src="右.png"></span>
+		<span id = "left"><img src="404/左.png"></span>
+		<span id = "right"><img src="404/右.png"></span>
 	</div>
 	<!-- 右侧固定导航 -->
 	<div class="smallnav">
@@ -45,12 +45,11 @@
 				<div id="navColor"></div>
 				<div id="nav-img"><img src="404/logo.png"></div>
 				<!-- 搜索 -->
-				<div class="search_box" id="search_box">
-					<input id="txt" type="text" placeholder="请输入姓名...." value="" class="W_input" name="search">
-					<button id="btn">搜索</button>
-					<ul id=list" class="content">
-					
-					</ul>
+				<div class="search_box" id="search_box" onsubmit="return search()">
+					<input autofocus id="search_input" type="text" placeholder="请输入...." value="" name="search">
+					<div class="search_btn">
+						<img onclick="return search()" src="404/搜索.png" />
+					</div>
 				</div>
 				<div id="nav-p">
 					<ul>
@@ -67,7 +66,7 @@
 	</div>
 <script type="text/javascript" src="404/animate.js"></script>
 <script type="text/javascript" src="404/banner.js"></script>
-<script type="text/javascript" src="404/top.js"></script>
+<script type="text/javascript" src="404/search.js"></script>
 
 </body>
 
