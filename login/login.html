@@ -64,7 +64,14 @@
 			left: 700px;
 			top: 150px;
 		}
-		#in{
+		#inLogin{
+			display: block;
+			position: absolute;
+			left: 50px;
+			top: 40px;
+		}
+		#inSign{
+			display: none;
 			position: absolute;
 			left: 50px;
 			top: 40px;
@@ -72,13 +79,36 @@
 		#cb{
 			margin: 20px 10px 10px 0;
 		}
-		#in img{
+		#inLogin img{
+			margin: 15px 10px 0 0;
+			position: relative;
+			top: 8px;
+		}
+		#inSign img{
 			margin: 15px 10px 0 0;
 			position: relative;
 			top: 8px;
 		}
 		#else img{
 			margin: 10px 5px 0 0;
+		}
+		#inSign #log{
+			width: 150px;
+			height: 30px;
+			margin: 10px 0;
+			padding: 5px;
+			border-radius: 15px;
+			background-color: #ae9775;
+			color: white;
+			display: inline-block;
+			text-align: center;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			position: absolute;
+			left: 100px;
+			top: 350px;
+			font-weight: 700;
 		}
 		#log{
 			width: 150px;
@@ -98,12 +128,54 @@
 			top: 290px;
 			font-weight: 700;
 		}
-		#in p{
+		#inLogin p{
 			color: #ae9775;
 			font-size: 14px;
 			font-family: "微软雅黑";
 			position: relative;
 			top: 10px;
+		}
+		#inSign p{
+			color: #ae9775;
+			font-size: 14px;
+			font-family: "微软雅黑";
+			position: relative;
+			top: 10px;
+		}
+		#logButton{
+			position: absolute;
+			left: -130px;
+			width: 80px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 15px;
+			border-radius: 5px;
+			background-color: #ae9775;
+			color: white;
+			display: inline-block;
+			text-align: center;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			z-index: 0;
+		}
+		#signButton{
+			position: absolute;
+			left: -130px;
+			top: 40px;
+			width: 80px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 15px;
+			border-radius: 5px;
+			background-color: #ae9775;
+			color: white;
+			display: inline-block;
+			text-align: center;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			z-index: 0;
 		}
 		#inp{
 			border-radius: 15px;
@@ -179,44 +251,63 @@
 			color: #fff;
 		}
 		#navBox{
+		/*border: 2px solid;*/
+		position: fixed;
+		background: #161820;
+		width: 100%;
+		height: 50px;
+		top: 0px;
+		/*margin: 0 auto;*/
+		}
+		#navColor{
+			/*margin: 0 auto;*/
 			position: fixed;
-			background: #000;
-			width: 100%;
-			height: 50px;
 			top: 0px;
-			left: 0px;
+			width: 100%;
+			height: 4px;
+			background:#fde70a;
+
+		}
+		#nav{
+			width: 1200px;
+			height: 50px;
+			/*margin: 0 auto;*/
+			top: 4px;
+			color: white;
+			position: fixed;
+
 		}
 		#nav-img{
-			margin: 0 auto;
-			position: relative;
+			/*margin: 0 auto;*/
+			position: fixed;
 			width: 60px;
 			height: 50px;
 			float: left;
 			left: 150px;
-
 		}
 		#nav-img img{
+			width: 60px;
 			height: 50px;
 		}
 		#nav-p{
-			margin: 0 auto;
-			position: relative;
+			/*margin: 0 auto;*/
+			position: fixed;
 			float: right;
 			font-size: 20px;
 			top: 14px;
 			right: 150px;
-			color: #eccd8d;
+
+		}
+		#nav-p a{
+			color: white;
 		}
 		#nav-p li{
 			display: inline-block;
 			width: 80px;
 			text-align: center;
 		}
-		#nav-p li a{
-			color: #eccd8d;
-		}
 		#nav-p li:hover a{
-			color: #fff;
+			color: #eccd8d;
 		}
 	</style>
 </head>
@@ -225,10 +316,10 @@
 	<div class="smallnav">
 		<ul>
 			<li class="nav0 current_page"><img src="logo.png" width="50px"></li>
-			<li class="nav1"><a href="#">大赛主页</a></li>
-			<li class="nav2"><a href="#">投票页面</a></li>
+			<li class="nav1"><a href="../404NotFound.html">大赛主页</a></li>
+			<li class="nav2"><a href="../pick/pick.html">投票页面</a></li>
 			<li class="nav3"><a href="#">账号登录</a></li>
-			<li class="nav4"><a href="#">我的PICK</a></li>
+			<li class="nav4"><a href="../introdution/雪梨大作业.html">我的PICK</a></li>
 		</ul>
 	</div>
 	<div id="big">
@@ -242,50 +333,91 @@
 			</div>
 		</div>
 		<div class="right">
-			<div id="in">
-				<div id="name">
-				<p>用户名：</p>
-				<div class="inp">
-					<img src="name.png" width="30px">
-					<input id="inp" type="text" name="name" value="  用户名">
-				</div>
-				</div>
-				<div id="phone">
-					<p>联系方式：</p>
-					<div class="inp">
-						<img src="phone.png" width="30px">
-						<input id="inp" type="text" name="phone" value="  联系方式">
+			<div id="inSign">
+				<div class="form_sign">
+					<input id="logButton" type="button" onclick="TurnToLogin()" value="登录">
+					<input id="signButton" type="button" onclick="TurnToRegister()" value="注册">
+					<div id="Phone">
+						<div class="inp">
+							<img src="phone.png" width="30px">
+							<input id="inp" type="text" name="phone" value="" onfocus="show1()">
+							<p id="inp1"></p>
+						</div>
+					</div>
+					<div id="name">
+						<p>用户名：</p>
+						<div class="inp">
+							<img src="name.png" width="30px">
+							<input id="inp" type="text" name="name" value="  用户名">
+						</div>
+					</div>
+					<div id="phone">
+						<p>联系方式：</p>
+						<div class="inp">
+							<img src="phone.png" width="30px">
+							<input id="inp" type="text" name="phone" value="  联系方式">
+						</div>
+					</div>
+					<div id="password">
+						<p>密码：</p>
+						<div class="inp">
+							<img src="password.png" width="30px">
+							<input type="password" name="password" id="inp">
+						</div>
+					</div>
+					<div>
+						<button id="log">立即注册</button>
 					</div>
 				</div>
-				<div id="password">
-					<p>密码：</p>
+			</div>
+			<div id="inLogin">
+				<div class="form_login">
+					<input id="logButton" type="button" onclick="TurnToLogin()" value="登录">
+					<input id="signButton" type="button" onclick="TurnToRegister()" value="注册">
+					<div id="name">
+					<p>用户名：</p>
 					<div class="inp">
-						<img src="password.png" width="30px">
-						<input type="password" name="password" id="inp">
+						<img src="name.png" width="30px">
+						<input id="inp" type="text" name="name" value="  用户名">
 					</div>
-				</div>
-				<input id="cb" type="checkbox" name="autologin" checked="">记住我
-				<div>
-					<button id="log">登录</button>
-				</div>
-				<div id="else">
-					其它登录方式：
-					<a href="#"><img src="weibo.png" width="20px"></a>
-					<a href="#"><img src="wechat.png" width="20px"></a>
-					<a href="#"><img src="qq.png" width="20px"></a>
-					<a href="#"><img src="github.png" width="20px"></a>
-					<a href="#"><img src="twitter.png" width="20px"></a>
-					<a href="#"><img src="alipay.png" width="20px"></a>
+					</div>
+					<div id="phone">
+						<p>联系方式：</p>
+						<div class="inp">
+							<img src="phone.png" width="30px">
+							<input id="inp" type="text" name="phone" value="  联系方式">
+						</div>
+					</div>
+					<div id="password">
+						<p>密码：</p>
+						<div class="inp">
+							<img src="password.png" width="30px">
+							<input type="password" name="password" id="inp">
+						</div>
+					</div>
+					<input id="cb" type="checkbox" name="autologin" checked="">记住我
+					<div>
+						<button id="log">登录</button>
+					</div>
+					<div id="else">
+						其它登录方式：
+						<a href="#"><img src="weibo.png" width="20px"></a>
+						<a href="#"><img src="wechat.png" width="20px"></a>
+						<a href="#"><img src="qq.png" width="20px"></a>
+						<a href="#"><img src="github.png" width="20px"></a>
+						<a href="#"><img src="twitter.png" width="20px"></a>
+						<a href="#"><img src="alipay.png" width="20px"></a>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="bottom">
 			<div id="footer">
 				<ul id="fl">
-					<li><a href="#">大赛主页</a></li>
-					<li><a href="#">投票页面</a></li>
+					<li><a href="../404NotFound.html">大赛主页</a></li>
+					<li><a href="../pick/pick.html">投票页面</a></li>
 					<li><a href="#">账号登录</a></li>
-					<li><a href="#">我的PICK</a></li>
+					<li><a href="../introdution/雪梨大作业.html">我的PICK</a></li>
 				</ul>
 			</div>
 			地址：河北省石家庄市南二环东路20号河北师大新校区理科群 <br />
@@ -298,12 +430,12 @@
 		<div id="nav-img"><img src="logo.png"></div>
 		<div id="nav-p">
 			<ul>
-				<li><span><a href="">首页</a></span></li>
-				<li><span><a href="">榜单</a></li>
-				<li><span><a href="">详情</a></li>
+				<li><span><a href="../404NotFound.html">首页</a></span></li>
+				<li><span><a href="../pick/pick.html">榜单</a></li>
+				<li><span><a href="#">详情</a></li>
 				<li><span><a href="">注册</a></li>
 				|
-				<li><span><a href="">登录</a></div></span></li>
+				<li><span><a href="#">登录</a></div></span></li>
 			</ul>
 		</ul>
 	</div>
