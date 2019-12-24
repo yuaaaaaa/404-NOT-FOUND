@@ -5,314 +5,10 @@
 	<meta charset="utf-8">
 	
 	<script type="text/javascript" src="animate.js"></script>
-	<style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		a{
-			text-decoration: none;
-		}
-		body{
-			margin: 0;
-			padding: 0;
-			background-image: url(../banner/bgimg.png);
-			background-size: 100%;
-			background-repeat-x: no-repeat;
-    		background-repeat-y: no-repeat;
-    		background-attachment: fixed;
-		}
-		#big{
-			background-color: rgba(11,13,60,0.9);
-			width: 1200px;
-			height: 600px;
-			border-radius: 45px;
-			margin: 6% auto 0;
-		}
-		.left{
-			width: 450px;
-			height: 600px;
-			position: absolute;
-			left: 300px;
-			top: 100px;
-			font-weight: 700;
-		}
-		#cc{
-			color: #eccd8d;
-		}
-		#logo{
-			width: 200px;
-			position: absolute;
-			left: -10px;
-			top: 100px;
-		}
-		#text1{
-			color: white;
-			position: absolute;
-			top: 300px;
-			left: 15px;
-			font-size: 25px;
-			line-height: 40px;
-		}
-		.right{
-			width: 500px;
-			height: 450px;
-			border-radius: 30px;
-			background-color: #fde7a0;
-			position: absolute;
-			margin:auto;
-			left: 700px;
-			top: 150px;
-		}
-		#inLogin{
-			display: block;
-			position: absolute;
-			left: 50px;
-			top: 40px;
-		}
-		#inSign{
-			display: none;
-			position: absolute;
-			left: 50px;
-			top: 40px;
-		}
-		#cb{
-			margin: 20px 10px 10px 0;
-		}
-		#inLogin img{
-			margin: 15px 10px 0 0;
-			position: relative;
-			top: 8px;
-		}
-		#inSign img{
-			margin: 15px 10px 0 0;
-			position: relative;
-			top: 8px;
-		}
-		#else img{
-			margin: 10px 5px 0 0;
-		}
-		#inSign #log{
-			width: 150px;
-			height: 30px;
-			margin: 10px 0;
-			padding: 5px;
-			border-radius: 15px;
-			background-color: #ae9775;
-			color: white;
-			display: inline-block;
-			text-align: center;
-			border: none;
-			outline: none;
-			cursor: pointer;
-			position: absolute;
-			left: 100px;
-			top: 350px;
-			font-weight: 700;
-		}
-		#log{
-			width: 150px;
-			height: 30px;
-			margin: 10px 0;
-			padding: 5px;
-			border-radius: 15px;
-			background-color: #ae9775;
-			color: white;
-			display: inline-block;
-			text-align: center;
-			border: none;
-			outline: none;
-			cursor: pointer;
-			position: absolute;
-			left: 100px;
-			top: 290px;
-			font-weight: 700;
-		}
-		#inLogin p{
-			color: #ae9775;
-			font-size: 14px;
-			font-family: "微软雅黑";
-			position: relative;
-			top: 10px;
-		}
-		#inSign p{
-			color: #ae9775;
-			font-size: 14px;
-			font-family: "微软雅黑";
-			position: relative;
-			top: 10px;
-		}
-		#logButton{
-			position: absolute;
-			left: -130px;
-			width: 80px;
-			height: 30px;
-			line-height: 30px;
-			font-size: 15px;
-			border-radius: 5px;
-			background-color: #ae9775;
-			color: white;
-			display: inline-block;
-			text-align: center;
-			border: none;
-			outline: none;
-			cursor: pointer;
-			z-index: 0;
-		}
-		#signButton{
-			position: absolute;
-			left: -130px;
-			top: 40px;
-			width: 80px;
-			height: 30px;
-			line-height: 30px;
-			font-size: 15px;
-			border-radius: 5px;
-			background-color: #ae9775;
-			color: white;
-			display: inline-block;
-			text-align: center;
-			border: none;
-			outline: none;
-			cursor: pointer;
-			z-index: 0;
-		}
-		#inp{
-			border-radius: 15px;
-			padding: 5px;
-			margin: 5px auto;
-			width: 300px;
-			height: 25px;
-			border:2px solid #eccd8d;
-			outline: none;
-			opacity: 50%;
-		}
-		#else{
-			position: relative;
-			top: 50px;
-			color: #ae9775;
-			font-size: 15px;
-			font-family: "微软雅黑";
-		}
-		.smallnav{
-			position: fixed;
-			right: 0px;
-			top: 250px;
-			z-index: 11;
-			margin-left: 510px;
-			padding-top: 157px;		
-			border-radius: 10px;
-		}
-		.smallnav ul{
-			position: relative;
-			top: -150px;
-			border-color: #ae9775;
-			height: 250px;
-			width: 100px;
-			border-radius: 10px;
-		}
-		.smallnav ul li{
-			position: relative;
-			top: 10px;
-			width: 80px;
-			margin: 10px auto 0;
-			padding: 5px 5px 5px 5px;
-			list-style: none;
-			background-color: #eccd8d;
-			border-radius: 10px;
-			text-align: center;
-		}
-		.smallnav a{
-			color: #fff;
-			font-size: 15px;
-		}
-		.smallnav: :before {
-			content: url(logo.png);
-		}
-		.bottom{
-			position: absolute;
-			right: 0px;
-			bottom: -200px;
-			width: 100%;
-			height: 150px;
-			background-color: #000;
-			color: #fff;
-			text-align: center;
-			opacity: 80%;
-		}
-		#fl li{
-			display: inline-block;
-			width: 200px;
-			height: 50px;
-			text-align: center;
-			line-height: 50px;
-		}
-		#fl li a{
-			color: #fff;
-		}
-		#navBox{
-		/*border: 2px solid;*/
-		position: fixed;
-		background: #161820;
-		width: 100%;
-		height: 50px;
-		top: 0px;
-		/*margin: 0 auto;*/
-		}
-		#navColor{
-			/*margin: 0 auto;*/
-			position: fixed;
-			top: 0px;
-			width: 100%;
-			height: 4px;
-			background:#fde70a;
-
-		}
-		#nav{
-			width: 1200px;
-			height: 50px;
-			/*margin: 0 auto;*/
-			top: 4px;
-			color: white;
-			position: fixed;
-
-		}
-		#nav-img{
-			/*margin: 0 auto;*/
-			position: fixed;
-			width: 60px;
-			height: 50px;
-			float: left;
-			left: 150px;
-		}
-		#nav-img img{
-			width: 60px;
-			height: 50px;
-		}
-		#nav-p{
-			/*margin: 0 auto;*/
-			position: fixed;
-			float: right;
-			font-size: 20px;
-			top: 14px;
-			right: 150px;
-
-		}
-		#nav-p a{
-			color: white;
-		}
-		#nav-p li{
-			display: inline-block;
-			width: 80px;
-			text-align: center;
-		}
-		#nav-p li:hover a{
-			color: #eccd8d;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="login.css">
 </head>
 
-<body>	
+<body>
 	<div class="smallnav">
 		<ul>
 			<li class="nav0 current_page"><img src="logo.png" width="50px"></li>
@@ -340,33 +36,33 @@
 					<div id="Phone">
 						<div class="inp">
 							<img src="phone.png" width="30px">
-							<input id="inp" type="text" name="phone" value="" onfocus="show1()">
-							<p id="inp1"></p>
+							<input id="phonenumber" type="text" name="phone" value="" onclick="show1()" onblur="dis1()">
 						</div>
+						<p class="inpP" id="p1">请输入你的正确的联系方式</p>
 					</div>
 					<div id="name">
-						<p>用户名：</p>
 						<div class="inp">
 							<img src="name.png" width="30px">
-							<input id="inp" type="text" name="name" value="  用户名">
+							<input id="username" type="text" name="name" value="  用户名" onclick="show2()" onblur="dis2()">
 						</div>
-					</div>
-					<div id="phone">
-						<p>联系方式：</p>
-						<div class="inp">
-							<img src="phone.png" width="30px">
-							<input id="inp" type="text" name="phone" value="  联系方式">
-						</div>
+						<p class="inpP" id="p2">请输入你的用户名</p>
 					</div>
 					<div id="password">
-						<p>密码：</p>
 						<div class="inp">
 							<img src="password.png" width="30px">
-							<input type="password" name="password" id="inp">
+							<input id="passwords" type="password" name="phone" onfocus="show3()" onblur="dis3()">
+						</div>
+						<p  class="inpP" id="p3">请输入你的密码</p>
+					</div>
+					<div id="code">
+						<div class="inp">
+							<img src="code.png" width="30px">
+							<input type="text" name="password" id="inp" value="验证码">
+							<button id="codes">点击发送验证码</button>
 						</div>
 					</div>
 					<div>
-						<button id="log">立即注册</button>
+						<button id="sign" onclick="sign()">立即注册</button>
 					</div>
 				</div>
 			</div>
