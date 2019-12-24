@@ -108,28 +108,10 @@ body{
 	width: 1200px;
 	height: 640px;
 }
-#newsBox{
-	border: 2px solid;
-	position: relative;
-	width: 1200px;
-	height: 300px;
-	margin: 0 auto;
-	margin-top: 60px;
-	background-color: #232235;
-	/*left: 120px;*/
 
-
-}
-#news{
-	position: relative;
-	border: 2px solid;
-	float: left;
-	width: 380px;
-	height: 300px;
-	
-}
 #tipBox{
 	/*border: 2px solid;*/
+	margin-top: 70px;
 	position: relative;
 
 }
