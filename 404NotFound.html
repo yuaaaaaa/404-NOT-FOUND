@@ -4,7 +4,7 @@
 	<title>404-NOT-FOUND</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="404/generalStyle.css">
-	<script type="text/javascript" src="404/jquery-1.8.2.js"></script>
+	<link rel="stylesheet" type="text/css" href="404/search.css">
 </head>
 <body>
 <div class="box">
@@ -16,22 +16,30 @@
 			<div class="slide"><img id="img" src="404/2.jpg"></div>
 			<div class="slide"><img id="img" src="404/1.jpg"></div>
 		</div>
-		<span id = "left"><img src="左.png"></span>
-		<span id = "right"><img src="右.png"></span>
+		<span id = "left"><img src="404/左.png"></span>
+		<span id = "right"><img src="404/右.png"></span>
 	</div>
 	<!-- 右侧固定导航 -->
 	<div class="smallnav">
 		<ul>
 			<li><img src="404/logo.png" width="50px"></li>
-			<li><a href="#">大赛主页</a></li>
-			<li><a href="#">投票页面</a></li>
-			<li><a href="#">账号登录</a></li>
+			<li><a href="404NotFound.html">大赛主页</a></li>
+			<li><a href="pick/pick.html">投票页面</a></li>
+			<li><a href="login/login.html">账号登录</a></li>
 			<li><a href="#">我的PICK</a></li>
 		</ul>
 	</div>
 
 	<!-- footer底部 -->
 	<div class="bottom">
+		<div id="footer">
+			<ul id="fl">
+				<li><a href="../404NotFound.html">大赛主页</a></li>
+				<li><a href="../pick/pick.html">投票页面</a></li>
+				<li><a href="#">账号登录</a></li>
+				<li><a href="../introduction/雪梨大作业.html">我的PICK</a></li>
+			</ul>
+		</div>
 		地址：河北省石家庄市南二环东路20号河北师大新校区理科群 <br />
 		联系电话：   88888888&nbsp;&nbsp;&nbsp;&nbsp;8888888<br />
 		版权所有：河北师范大学软件学院<br />
@@ -45,21 +53,20 @@
 				<div id="navColor"></div>
 				<div id="nav-img"><img src="404/logo.png"></div>
 				<!-- 搜索 -->
-				<div class="search_box" id="search_box">
-					<input id="txt" type="text" placeholder="请输入姓名...." value="" class="W_input" name="search">
-					<button id="btn">搜索</button>
-					<ul id=list" class="content">
-					
-					</ul>
+				<div class="search_box" id="search_box" onsubmit="return search()">
+					<input autofocus id="search_input" type="text" placeholder="请输入...." value="" name="search">
+					<div class="search_btn">
+						<img onclick="return search()" src="404/搜索.png" />
+					</div>
 				</div>
 				<div id="nav-p">
 					<ul>
-						<li><span><a href="">首页</a></span></li>
-						<li><span><a href="">榜单</a></li>
-						<li><span><a href="">详情</a></li>
-						<li><span><a href="">注册</a></li>
+						<li><span><a href="404NotFound.html">首页</a></span></li>
+						<li><span><a href="pick/pick.html">榜单</a></li>
+						<li><span><a href="#">详情</a></li>
+						<li><span><a href="login/login.html">注册</a></li>
 						|
-						<li><span><a href="">登录</a></div></span></li>
+						<li><span><a href="login/login.html">登录</a></div></span></li>
 					</ul>
 				</div>
 			</div>
@@ -67,7 +74,7 @@
 	</div>
 <script type="text/javascript" src="404/animate.js"></script>
 <script type="text/javascript" src="404/banner.js"></script>
-<script type="text/javascript" src="404/top.js"></script>
+<script type="text/javascript" src="404/search.js"></script>
 
 </body>
 

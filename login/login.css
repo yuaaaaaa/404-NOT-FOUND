@@ -281,13 +281,14 @@ body{
 	color: #fff;
 }
 #navBox{
-/*border: 2px solid;*/
-position: fixed;
-background: #161820;
-width: 100%;
-height: 50px;
-top: 0px;
-/*margin: 0 auto;*/
+	/*border: 2px solid;*/
+	position: fixed;
+	background: #161820;
+	width: 100%;
+	height: 50px;
+	top: 0px;
+	left: 0px;
+	/*margin: 0 auto;*/
 }
 #navColor{
 	/*margin: 0 auto;*/
