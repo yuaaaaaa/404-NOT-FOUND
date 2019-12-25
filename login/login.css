@@ -190,9 +190,10 @@ body{
 }
 #codes{
 	position: absolute;
-	top: 264px;
+
 	left: 240px;
 	width: 120px;
+	top: 264px;
 	height: 36px;
 	line-height: 30px;
 	font-size: 15px;
