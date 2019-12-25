@@ -36,21 +36,22 @@ function dis2(){
 function dis3(){
 	p3.innerHTML = "请输入你的密码 ";
 }
-var phonenumber = document.getElementById('phonenumber').value.length;
-var username = document.getElementById('username').value.length;
-var password = document.getElementById('passwords').value.length;
+var phonenumber = document.getElementById('phonenumber');
+var username = document.getElementById('username');
+var password = document.getElementById('passwords');
 
 function sign(){
-	if (phonenumber != 11) {
+	if (phonenumber.value.length != 11) {
 		p1.innerHTML = "联系方式未填写正确，请重新填写"
 	}
-	if (username < 4 || username > 10){
+	if (username.value.length < 4 || username.value.length > 10){
 		p2.innerHTML="用户名位数不对，请重写填写";
 	}
-	if (password < 6 || password > 12) {
+	if (password.value.length < 6 || password.value.length > 12) {
 		p3.innerHTML="密码位数不对，请重新填写";
 	}
-	if ((phonenumber == 11)&&(username >= 5 && username <= 10)&&(password >= 6 && password <= 15)) {
+	if ((phonenumber.value.length == 11)&&(username.value.length >= 5 && username.value.length <= 10)&&(password.value.length >= 6 && password.value.length <= 15)) {
 		alert('注册成功！')
+		window.location.href = "../pick/pick.html";
 	}
 }
